@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ribbon – Read your Google Drive PDF books and never lose your page</title>
+<meta name="description" content="Ribbon is a desktop PDF reader that opens the books in your Google Drive and remembers your page, so you can continue on any computer.">
+<style>
+  :root { --ink:#1f2a44; --paper:#eef1f6; --card:#fff; --slate:#5b6785; --line:#d3dae6; --ribbon:#b8323f; --btn-text:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink:#e6eaf3; --paper:#141a2b; --card:#1c2440; --slate:#a3aec9; --line:#2f3a5c; --ribbon:#e0616d; --btn-text:#141a2b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 "Segoe UI", system-ui, -apple-system, Arial, sans-serif; }
+  a { color: inherit; text-decoration-color: var(--ribbon); text-underline-offset: 3px; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  nav { display:flex; align-items:center; justify-content:space-between; padding: 22px 0; }
+  .brand { display:flex; align-items:center; gap:10px; font-family: "Iowan Old Style", Palatino, Georgia, serif; font-size:1.4rem; font-weight:600; text-decoration:none; }
+  .mark { width:14px; height:26px; background:var(--ribbon); clip-path: polygon(0 0,100% 0,100% 100%,50% 76%,0 100%); display:inline-block; }
+  nav a.link { color: var(--slate); font-size:.95rem; }
+  h1, h2, h3 { font-family: "Iowan Old Style", Palatino, Georgia, serif; line-height:1.2; }
+  .hero { padding: 48px 0 40px; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0 0 14px; letter-spacing: -0.01em; }
+  .hero p { font-size:1.15rem; color:var(--slate); max-width: 600px; margin: 0 0 24px; }
+  .btn { display:inline-block; background:var(--ink); color:var(--btn-text); padding: 11px 20px; border-radius: 6px; text-decoration:none; font-weight:600; margin: 0 8px 8px 0; }
+  .btn.alt { background:transparent; color:var(--ink); border:1px solid var(--line); }
+  section { padding: 28px 0; }
+  h2 { font-size: 1.6rem; margin: 0 0 14px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-left:6px solid var(--ink); border-radius:4px 10px 10px 4px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin:0; color:var(--slate); font-size:.97rem; }
+  ol.steps { list-style:none; counter-reset:s; padding:0; margin:0; display:grid; gap:12px; }
+  ol.steps li { counter-increment:s; background:var(--card); border:1px solid var(--line); border-radius:10px; padding: 14px 18px 14px 58px; position:relative; }
+  ol.steps li::before { content:counter(s); position:absolute; left:16px; top:12px; width:28px; height:28px; border-radius:50%; background:var(--ink); color:var(--btn-text); display:grid; place-items:center; font-weight:600; font-size:.95rem; }
+  .note { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+  .note ul { margin: 8px 0 0; padding-left: 20px; }
+  code { background:var(--paper); border:1px solid var(--line); border-radius:4px; padding:1px 5px; font-size:.86em; word-break:break-all; }
+  footer { border-top:1px solid var(--line); margin-top: 32px; padding: 24px 0 48px; color:var(--slate); font-size:.92rem; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="/"><span class="mark" aria-hidden="true"></span>Ribbon</a>
+    <a class="link" href="/privacy/">Privacy Policy</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Your Drive books, and your place in them, on every computer.</h1>
+    <p>Ribbon is a desktop PDF reader for Windows and Linux. It opens the PDF books stored in your Google Drive and remembers the page you reached, so you can pick up exactly where you left off on any computer.</p>
+    <a class="btn" href="[YOUR-DOWNLOAD-URL]">Download Ribbon</a>
+    <a class="btn alt" href="/privacy/">Read the privacy policy</a>
+  </header>
+
+  <section>
+    <h2>What Ribbon does</h2>
+    <div class="grid">
+      <div class="card"><h3>Finds books in your Drive</h3><p>Search your Google Drive for PDFs by name and add the ones you are reading to your home screen.</p></div>
+      <div class="card"><h3>Remembers your page</h3><p>Your home screen shows each book with its page, percentage, and a bookmark ribbon at your place.</p></div>
+      <div class="card"><h3>Continue anywhere</h3><p>Progress is saved in a private, hidden folder in your own Drive, so another computer picks up the same page after you sign in.</p></div>
+      <div class="card"><h3>Works offline</h3><p>Books you have opened are kept on your computer, and your progress syncs when you are back online.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Sign in with Google.</strong> Sign-in happens in your normal web browser. Ribbon never sees your password.</li>
+      <li><strong>Search and add a book.</strong> Type part of a file name, then choose <em>Add to my books</em>. It appears on your home screen at 0%.</li>
+      <li><strong>Click the book to read.</strong> It opens at your saved page. When you close it, your progress is saved and the home screen updates.</li>
+    </ol>
+  </section>
+
+  <section id="google-data">
+    <h2>How Ribbon uses your Google data</h2>
+    <div class="note">
+      <p>Ribbon asks for the following Google permissions, and only uses them for the purposes described:</p>
+      <ul>
+        <li><code>drive.readonly</code> &ndash; read-only access, so Ribbon can search for and open the PDF books you choose. It never changes, moves, or deletes your files.</li>
+        <li><code>drive.appdata</code> &ndash; a hidden folder in your Drive that only Ribbon can see, holding one small file with your reading progress.</li>
+        <li><code>openid</code> and <code>email</code> &ndash; to show which account is signed in.</li>
+      </ul>
+      <p>Ribbon has no server operated by its developer. Your data travels only between your computer and Google, and is never sold, shared, or used for advertising.</p>
+      <p>Ribbon&rsquo;s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Read the full <a href="/privacy/">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="mailto:[YOUR CONTACT EMAIL]">Contact: [YOUR CONTACT EMAIL]</a>
+    <p>&copy; 2026 [YOUR NAME OR BUSINESS NAME]. Ribbon is an independent app and is not affiliated with or endorsed by Google. Google Drive is a trademark of Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>
